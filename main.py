@@ -4,11 +4,6 @@ from pandas import DataFrame
 import re
 from unidecode import unidecode
 
-def get_yt_title(yt_link):
-    from pytube import YouTube
-    yt = YouTube(yt_link)
-    return yt.title
-
 st.title('Hưng\'s karaoke song')
 
 # Load data
@@ -84,12 +79,13 @@ st.data_editor(
                 ),
             'duet': st.column_config.SelectboxColumn(
                 help='is this Duet song?',
-                width="small"
+                width="small",
+                options=['xx','xy', 'yy', None]
                 ),
             'theme': st.column_config.SelectboxColumn(
                 help='chủ đề bài hát',
                 width="small",
-                options=['tết', 'wedding', 'love']
+                options=['tet', 'wedding', 'love']
                 ),
             'tempo': st.column_config.SelectboxColumn(
                 help='tiết tấu bài hát',
