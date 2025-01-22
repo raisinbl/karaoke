@@ -85,7 +85,7 @@ st.data_editor(
             'theme': st.column_config.SelectboxColumn(
                 help='chủ đề bài hát',
                 width="small",
-                options=['tet', 'wedding', 'love']
+                options=['tet', 'wedding', 'love', 'life']
                 ),
             'tempo': st.column_config.SelectboxColumn(
                 help='tiết tấu bài hát',
