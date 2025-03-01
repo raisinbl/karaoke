@@ -95,7 +95,7 @@ st.data_editor(
             'mood': st.column_config.SelectboxColumn(
                 help='tâm trạng bài',
                 width="small",
-                options=["happy", "sad", "love"]
+                options=["happy", "sad", "love", "neutral"]
                 ),
             },
         num_rows='dynamic'
